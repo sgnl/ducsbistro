@@ -1,0 +1,22 @@
+{
+  "name": "com.ducs_bistro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build:css -- -w & airship serve & npm run server",
+    "server": "browser-sync start --proxy \"localhost:9001\" --files \"compartments/**/*\"",
+    "build:css": "postcss ./src/css/styles.css --use precss --use autoprefixer --output compartments/assets/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "Ray Farias <rayrfarias@gmail.com> (http://github.com/sgnl)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^3.1.1",
+    "precss": "^1.4.0"
+  }
+}
