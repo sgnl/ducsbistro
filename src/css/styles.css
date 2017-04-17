@@ -1,7 +1,11 @@
-/* Delete contents and replace with your own styles! */
+
+/* Media Queries */
+@custom-media --phone (max-width: 544px);
+@custom-media --tablet (max-width: 768px);
+@custom-media --desktop (max-width: 992px);
+@custom-media --large-desktop (max-width: 1200px);
 
 /* CSS Reset */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +60,7 @@ body {
   font-size: 1rem;
   color: #333;
   letter-spacing: 1px;
+  padding: 0 0.3em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,15 +73,47 @@ p {
 
 .contain {
   margin: 0 auto;
-  width: 1100px;
+  max-width: 1100px;
+
+  @media (--phone) {
+    width: 100%;
+  }
+
+  @media (--tablet) {
+    width: 100%;
+  }
 
   &__section {
     width: 800px;
+
+    @media (--phone) {
+      width: 100%;
+    }
+
+    @media (--tablet) {
+      width: 100%;
+    }
   }
 }
 
 .section {
   padding: 1.5rem 0;
+}
+
+.hidden {
+  display: none;
+
+  &--phone {
+    @media (--phone) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (--tablet) {
+      display: none;
+    }
+  }
 }
 
 .main-header {
@@ -86,6 +123,15 @@ p {
   align-items: center;
   font-size: 2rem;
 
+  @media (--phone) {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+  @media (--tablet) {
+    text-align: center;
+  }
+
   &__text {
     font-size: 2em;
   }
@@ -93,11 +139,42 @@ p {
   &__information {
     margin-bottom: 2em;
     font-size: 0.65em;
+
+    @media (--phone) {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    @media (--tablet) {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 1em;
+    }
+
+    & span {
+      padding: 0.5em 0;
+
+      @media (--tablet) {
+        padding: 0;
+      }
+    }
   }
 
   &__address {
     font-size: 0.60em;
     margin-bottom: 0.5em;
+
+    @media (--phone) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
   }
 }
 
@@ -105,15 +182,26 @@ p {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-
   margin: 0 auto;
   width: 600px;
   padding: 2em 0;
-
   font-family: 'Lato', sans-serif;
+
+  @media (--phone) {
+    width: 100%;
+    background: #ddd;
+    justify-content: space-around;
+  }
+
+  @media (--tablet) {
+    width: 100%;
+    background: #ddd;
+    justify-content: space-around;
+  }
 
   & :any-link {
     color: #333;
+    height: 100%;
   }
 
   &__item {
@@ -121,6 +209,14 @@ p {
     background: #ddd;
     border: 1px solid #ddd;
     border-radius: 3px;
+
+    @media (--phone) {
+      padding: 1em 0.5em;
+      background: none;
+      border: none;
+      border-radius: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -132,6 +228,10 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (--phone) {
+    display: none;
+  }
 }
 
 .restaurant-hours {
