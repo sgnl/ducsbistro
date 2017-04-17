@@ -1,0 +1,16 @@
+
+<div class="menu section contain contain__section" id="menu">
+  <h2 class="menu__title">{{fields.type}}</h2>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Appetizers</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.champagne_sparkling_wine}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}} • {{fields.cost}}</h4>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+</div>

@@ -1,0 +1,12 @@
+#menu.menu.section.contain.contain__section
+  h2.menu__title {{fields.type}}
+  article.menu__course.section
+    header.menu__course.section
+      h3 Appetizers
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.champagne_sparkling_wine}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
