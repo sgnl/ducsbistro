@@ -8,9 +8,9 @@
     "launch": "npm run production && airship launch && git checkout .",
     "production": "npm run build:css && npm run build:html && echo \"Production Build Complete\"",
     "dev": "npm run build:css -- -w & npm run build:html -- -w -P & airship serve & npm run server",
-    "server": "browser-sync start --proxy \"localhost:9001\" --files \"compartments/**/*\"",
-    "build:css": "postcss ./src/css/styles.css --use precss --use autoprefixer --output compartments/assets/styles/styles.css",
-    "build:html": "pug src/compartments --out compartments"
+    "server": "browser-sync start --proxy \"localhost:9001\" --files \"./compartments/**/*\"",
+    "build:css": "postcss ./src/css/styles.css --use precss --use autoprefixer --output ./compartments/assets/styles/styles.css",
+    "build:html": "pug ./src/compartments --out ./compartments"
   },
   "keywords": [],
   "author": "Ray Farias <rayrfarias@gmail.com> (http://github.com/sgnl)",
