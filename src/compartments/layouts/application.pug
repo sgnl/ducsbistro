@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Airship CMS Project
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/css?family=Crimson+Text|Lato', rel='stylesheet')
+    link(rel='stylesheet', href='/assets/styles/styles.css')
+  body
+    header.main-header.contain.section
+      h1.main-header__text Duc’s Bistro
+      p.main-header__information.section Traditional Vietnamese and Classic French Cuisine • Serving Chinatown Since 1992
+      address.main-header__address 1188 Maunakea Street Honolulu, Hawaii 96817
+      p For reservations please call (808) 531-6325
+    nav.section
+      ul.navigation
+        li.navigation__item
+          a(href='/') Home
+        li.navigation__item
+          a(href='/#hours') Hours
+        li.navigation__item
+          a(href='/menu/view/main-menu') Menu
+        li.navigation__item
+          a(href='/wine-lists/view/wine') Wine List
+    |   {{{ template }}}
