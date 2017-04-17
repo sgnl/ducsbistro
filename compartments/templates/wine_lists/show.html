@@ -1,15 +1,146 @@
 
-<div class="menu section contain contain__section" id="menu">
-  <h2 class="menu__title">{{fields.type}}</h2>
-  <article class="menu__course section">
-    <header class="menu__course section">
-      <h3>Appetizers</h3>
-      <p>Served Family Style</p>
+<div class="wine section contain contain__section" id="wine">
+  <h2 class="wine__title">{{fields.type}}</h2>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Champagne & Sparkling Wine</h3>
     </header>
-    <ul class="menu__course__list section">{{#each related_items.champagne_sparkling_wine}}
-      <li class="menu__course__item">
-        <h4 class="menu__course__item__name">{{fields.name}} • {{fields.cost}}</h4>
-        <p class="menu__course__item__price"></p>
+    <ul class="section">{{#each related_items.champagne_sparkling_wine}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Chardonnay</h3>
+    </header>
+    <ul class="section">{{#each related_items.chardonnay}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Sauvignon Blanc</h3>
+    </header>
+    <ul class="section">{{#each related_items.sauvignon_blanc}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Riesling</h3>
+    </header>
+    <ul class="section">{{#each related_items.riesling}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Light White</h3>
+    </header>
+    <ul class="section">{{#each related_items.light_white}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Sweet Wine</h3>
+    </header>
+    <ul class="section">{{#each related_items.sweet_wine}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Sake</h3>
+    </header>
+    <ul class="section">{{#each related_items.sake}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Cabernet Sauvignon</h3>
+    </header>
+    <ul class="section">{{#each related_items.cabernet_sauvignon}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Pinot Noir</h3>
+    </header>
+    <ul class="section">{{#each related_items.pinot_noir}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Merlot</h3>
+    </header>
+    <ul class="section">{{#each related_items.merlot}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Zinfadel</h3>
+    </header>
+    <ul class="section">{{#each related_items.zinfadel}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Blends and Other Reds</h3>
+    </header>
+    <ul class="section">{{#each related_items.blend_other_reds}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="wine__list section">
+    <header class="wine__list section">
+      <h3>Fuller Red</h3>
+    </header>
+    <ul class="section">{{#each related_items.fuller_red}}
+      <li class="wine__list__item">
+        <h4 class="wine__list__item__name">{{fields.name}}</h4>
+        <p class="wine__list__item__price">{{fields.cost}}</p>
       </li>{{/each}}
     </ul>
   </article>

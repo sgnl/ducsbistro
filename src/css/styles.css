@@ -200,3 +200,40 @@ p {
     }
   }
 }
+
+.wine {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+
+  &__title {
+    font-size: 1.5em;
+  }
+
+  &__list {
+    header {
+      text-align: center;
+      h3 {
+        text-decoration: underline;
+        padding: 0.5em 0;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 0;
+      text-align: left;
+
+      &__name {
+        // flex: 0 0 60%;
+        padding: 0.5em 0;
+      }
+    }
+  }
+}
+

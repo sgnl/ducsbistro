@@ -1,12 +1,131 @@
-#menu.menu.section.contain.contain__section
-  h2.menu__title {{fields.type}}
-  article.menu__course.section
-    header.menu__course.section
-      h3 Appetizers
-      p Served Family Style
-    ul.menu__course__list.section
+#wine.wine.section.contain.contain__section
+  h2.wine__title {{fields.type}}
+  article.wine__list.section
+    header.wine__list.section
+      h3 Champagne & Sparkling Wine
+    ul.section
       | {{#each related_items.champagne_sparkling_wine}}
-      li.menu__course__item
-        h4.menu__course__item__name {{fields.name}} • {{fields.cost}}
-        p.menu__course__item__price
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Chardonnay
+    ul.section
+      | {{#each related_items.chardonnay}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Sauvignon Blanc
+    ul.section
+      | {{#each related_items.sauvignon_blanc}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Riesling
+    ul.section
+      | {{#each related_items.riesling}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Light White
+    ul.section
+      | {{#each related_items.light_white}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Sweet Wine
+    ul.section
+      | {{#each related_items.sweet_wine}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Sake
+    ul.section
+      | {{#each related_items.sake}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Cabernet Sauvignon
+    ul.section
+      | {{#each related_items.cabernet_sauvignon}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Pinot Noir
+    ul.section
+      | {{#each related_items.pinot_noir}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Merlot
+    ul.section
+      | {{#each related_items.merlot}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Zinfadel
+    ul.section
+      | {{#each related_items.zinfadel}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Blends and Other Reds
+    ul.section
+      | {{#each related_items.blend_other_reds}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
+      | {{/each}}
+
+  article.wine__list.section
+    header.wine__list.section
+      h3 Fuller Red
+    ul.section
+      | {{#each related_items.fuller_red}}
+      li.wine__list__item
+        h4.wine__list__item__name {{fields.name}}
+        p.wine__list__item__price {{fields.cost}}
       | {{/each}}
