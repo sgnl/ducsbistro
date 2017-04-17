@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "launch": "npm run production && airship launch && git checkout .",
     "production": "npm run build:css && npm run build:html && echo \"Production Build Complete\"",
     "dev": "npm run build:css -- -w & npm run build:html -- -w -P & airship serve & npm run server",
     "server": "browser-sync start --proxy \"localhost:9001\" --files \"compartments/**/*\"",
