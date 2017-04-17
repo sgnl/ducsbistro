@@ -1,0 +1,93 @@
+
+<div class="menu section contain contain__section" id="menu">
+  <h2 class="menu__title">{{fields.type}}</h2>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Appetizers</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.appetizers}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Soup and Salad</h3>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.soup_and_salad}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Vegetables</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.vegetables}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Seafood</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.seafood}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Poultry</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.poultry}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Meat</h3>
+      <p>Served Family Style</p>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.meat}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+  <article class="menu__course section">
+    <header class="menu__course section">
+      <h3>Starches</h3>
+    </header>
+    <ul class="menu__course__list section">{{#each related_items.starches}}
+      <li class="menu__course__item">
+        <h4 class="menu__course__item__name">{{fields.name}}</h4>
+        <p class="menu__course__item__desc">{{fields.description}} • {{fields.cost}}</p>
+        <p class="menu__course__item__price"></p>
+      </li>{{/each}}
+    </ul>
+  </article>
+</div>

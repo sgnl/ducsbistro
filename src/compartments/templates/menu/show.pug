@@ -1,0 +1,83 @@
+#menu.menu.section.contain.contain__section
+  h2.menu__title {{fields.type}}
+  article.menu__course.section
+    header.menu__course.section
+      h3 Appetizers
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.appetizers}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Soup and Salad
+    ul.menu__course__list.section
+      | {{#each related_items.soup_and_salad}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Vegetables
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.vegetables}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Seafood
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.seafood}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Poultry
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.poultry}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Meat
+      p Served Family Style
+    ul.menu__course__list.section
+      | {{#each related_items.meat}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
+
+  article.menu__course.section
+    header.menu__course.section
+      h3 Starches
+    ul.menu__course__list.section
+      | {{#each related_items.starches}}
+      li.menu__course__item
+        h4.menu__course__item__name {{fields.name}}
+        p.menu__course__item__desc {{fields.description}} • {{fields.cost}}
+        p.menu__course__item__price
+      | {{/each}}
