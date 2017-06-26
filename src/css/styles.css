@@ -139,6 +139,7 @@ p {
   &__information {
     margin-bottom: 2em;
     font-size: 0.65em;
+    letter-spacing: 2px;
 
     @media (--phone) {
       display: flex;
@@ -163,8 +164,10 @@ p {
   }
 
   &__address {
-    font-size: 0.60em;
     margin-bottom: 0.5em;
+    font-size: 0.60em;
+    line-height: 3rem;
+    letter-spacing: 2px;
 
     @media (--phone) {
       padding: 2rem 0;
@@ -175,6 +178,7 @@ p {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    line-height: 2rem;
   }
 }
 
@@ -332,3 +336,10 @@ p {
   }
 }
 
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
