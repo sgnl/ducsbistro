@@ -313,6 +313,7 @@ p {
   }
 
   &__list {
+    margin: 1rem 0;
     text-align: center;
 
     & h3 {
